@@ -63,8 +63,11 @@ yay -S mpdris2
 ## **⚙️ KDE Configuration**
 
 ### **Global Theme**
-- **Theme:** Utterly Nord
-- **Icons:** Cobalt-icons
+- **Wallpaper:** [Keep Smiling [3860x2140]](https://www.reddit.com/r/wallpapers/comments/10cp3ee/keep_smiling_3860x2140/)
+- **Theme:** [Utterly Nord](https://store.kde.org/p/1905813/)
+- **Icons:** [Cobalt-icons](https://store.kde.org/p/1687796)
+- **Cursor:** [Afterglow Cursors](https://www.gnome-look.org/p/1628952/)
+- **Colors:** [Ars-Nord](https://www.pling.com/p/2192462/) Basically copy pasted Ars-Nord but changed background, titlebar, etc to #111111
 
 ### **Widgets**
 
