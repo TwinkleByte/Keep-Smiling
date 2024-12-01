@@ -167,7 +167,7 @@ yay -S mpdris2
    - Uncheck: Disable roundness on tile
    - Primary Outline:
      - Outline Thickness (active & inactive): **3.55**
-     - Use Decoration Color: Link
+     - Use Decoration Color: Highlight
      - Uncheck: Disable outline on tile
 
 ### **3. Geometry Change**
