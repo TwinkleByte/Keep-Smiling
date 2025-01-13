@@ -1,0 +1,124 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "properties": {
+                        "cache_duration": "none"
+                    },
+                    "leading_diamond": "\u256d\u2500\ue0b6",
+                    "template": "{{ .Icon }} {{ .UserName }}@{{ .HostName }} ",
+                    "foreground": "black",
+                    "background": "#ffffff",
+                    "type": "os",
+                    "style": "diamond",
+                    "min_width": 80
+                },
+                {
+                    "properties": {
+                        "cache_duration": "none",
+                        "folder_icon": "\uf115",
+                        "folder_separator_icon": "\\",
+                        "home_icon": "\ueb06",
+                        "style": "full"
+                    },
+                    "template": " <#fff>\uf07b \uea9c</> {{ .Path }} ",
+                    "foreground": "#fff",
+                    "powerline_symbol": "\ue0b0",
+                    "background": "#ffd23d",
+                    "type": "path",
+                    "style": "powerline",
+                    "min_width": 80
+                },
+                {
+                    "properties": {
+                        "branch_icon": " <#fff>\ue0a0 </>",
+                        "cache_duration": "none",
+                        "fetch_stash_count": true,
+                        "fetch_status": false,
+                        "fetch_upstream_icon": true
+                    },
+                    "template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+                    "foreground": "#fff",
+                    "powerline_symbol": "\ue0b0",
+                    "background": "#FCA17D",
+                    "type": "git",
+                    "style": "powerline",
+                    "min_width": 80
+                },
+                {
+                    "properties": {
+                        "cache_duration": "none"
+                    },
+                    "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+                    "foreground": "black",
+                    "powerline_symbol": "\ue0b0",
+                    "background": "#76b367",
+                    "type": "node",
+                    "style": "powerline",
+                    "min_width": 80
+                },
+                {
+                    "properties": {
+                        "always_enabled": true,
+                        "cache_duration": "none"
+                    },
+                    "template": " \ueba2 {{ .FormattedMs }} ",
+                    "foreground": "black",
+                    "powerline_symbol": "\ue0b0",
+                    "background": "#ffffff",
+                    "type": "executiontime",
+                    "style": "powerline",
+                    "min_width": 80
+                },
+                {
+                    "properties": {
+                        "cache_duration": "none",
+                        "time_format": "2 Jan,2006"
+                    },
+                    "template": " \uf073 {{ .CurrentDate | date .Format }} ",
+                    "foreground": "#fff",
+                    "powerline_symbol": "\ue0b0",
+                    "background": "#ffd23d",
+                    "type": "time",
+                    "style": "powerline",
+                    "min_width": 80
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "properties": {
+                        "cache_duration": "none"
+                    },
+                    "template": "\u2570\u2500",
+                    "foreground": "#ffd23d",
+                    "type": "text",
+                    "style": "plain"
+                },
+                {
+                    "properties": {
+                        "always_enabled": true,
+                        "cache_duration": "none"
+                    },
+                    "template": "\ue285 ",
+                    "foreground": "#e0f8ff",
+                    "type": "status",
+                    "style": "plain",
+                    "foreground_templates": [
+                        "{{ if gt .Code 0 }}#ef5350{{ end }}"
+                    ]
+                }
+            ],
+            "newline": true
+        }
+    ],
+    "version": 3,
+    "final_space": true
+}
